@@ -7,5 +7,12 @@ def show_menu():
   separador()
   print("Escriba una opcion")
 
+def show_registros(rows):
+  separador()
+  print("CUENTA\tNOMBRE\tTELEFONO\tGENERO\tCORREO")
+  for row in rows:
+    print(row[0] + "\t" + row[1] + "\t" + row[2] + "\t" + row[3] + "\t" + row[4])
+  separador()
+
 def separador():
   print("="*60)
